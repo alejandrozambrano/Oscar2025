@@ -8,11 +8,12 @@
     --bg-color: #000;
     --font-color: #fff
     --secondary-bg-color: #ff4900
-    --font: "Poppins"
+    --font: "sans-serif";
+   
 }
 
 body {
-    background-color: var(--bg-color);
+    /*background-color: var(--bg-color);*/
     font-family: var(--font);
     color: var(--font-color);
     height: 100vh;
@@ -33,6 +34,71 @@ body {
 
 
 /*------------HEADER-----------*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .logo {
+    max-width: 13rem;
+    padding-left: 3rem;
+  }
+
+  .nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 4rem;
+    font-size: 16px;
+    margin-top: 1rem;    
+    margin-right: 2.5rem; 
+  }
+
+  .nav-list li a {
+    text-decoration: none;
+    color: #1c1c1c;
+  }
+  .nav-list ul li p {
+    padding: 5px;
+    font-size: 12px;
+  }
+  .nav-list :hover {
+    text-decoration: underline;
+  }
+
+  .abrir-menu,
+  .cerrar-menu {
+    display: none;
+  } 
+
+  .flag {
+  width: 24px;
+  height: 13px;
+  border-radius: 2px;
+  display: flex;
+  margin-top: .3rem;
+
+}
+
+.nav-list li ul li {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  }
+
+    .nav-list li ul li:nth-child(1) {
+display: flex;
+align-items: center;
+text-decoration: none;
+}
+
+
+.nav-list li ul li p {
+margin: 0;
+}
+
 
 /**-Responsive desing navbar-**/
 
